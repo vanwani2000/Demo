@@ -52,4 +52,20 @@ BinaryTreeNode<int> *takeInput() {
   return root;
 }
 
-int main() { BinaryTreeNode<int> *root = takeInput(); }
+void print(BinaryTreeNode<int> *root) {
+  if (root == NULL) {
+    return;
+  }
+
+  queue<BinaryTreeNode<int> *> pendingNodes;
+  pendingNodes.push(root);
+
+  while (pendingNodes.size() != 0) {
+    BinaryTreeNode<int> *front = pendingNodes.front();
+  }
+}
+
+int main() {
+  BinaryTreeNode<int> *root = takeInput();
+  print(root);
+}
