@@ -62,6 +62,10 @@ void print(BinaryTreeNode<int> *root) {
 
   while (pendingNodes.size() != 0) {
     BinaryTreeNode<int> *front = pendingNodes.front();
+    if (front->left) {
+    }
+    if (front->right) {
+    }
   }
 }
 
